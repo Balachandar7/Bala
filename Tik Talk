@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Style Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            color: white;
+        }
+        .actions {
+            position: absolute;
+            right: 5%;
+            bottom: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .action {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video src="example-video.mp4" autoplay loop muted></video>
+        <div class="overlay">
+            <h2>@username</h2>
+            <p>Caption for the video goes here.</p>
+        </div>
+        <div class="actions">
+            <div class="action">❤️</div>
+            <div class="action">💬</div>
+            <div class="action">🔗</div>
+        </div>
+    </div>
+</body>
+</html>
